@@ -10,6 +10,7 @@ title: 我的Blog
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
+<p>category</p>
 {% for category in site.categories %}
 <p>{{ category | first }}</p>
 </span>{{ category | last | size }}</span>
@@ -19,3 +20,4 @@ title: 我的Blog
 	{% endfor %}
 </ul>
 {% endfor %}
+<p>--category--</p>
