@@ -10,7 +10,7 @@
 		<div style="float:left;width:15%;height:100%;border-right: 1px solid #000;">
 			<p>--category--</p>
 			{% for category in site.categories%}
-				<p><a href="\MyBlog\{{category[0]}}\index.html"> {{ category | first }}</a>&nbsp;&nbsp;&nbsp;{{ category | last | size }}</p>
+				<p><a href="\{{category[0]}}\index.html"> {{ category | first }}</a>&nbsp;&nbsp;&nbsp;{{ category | last | size }}</p>
 			{% endfor %}
 			<p>--category--</p>
 		</div>
