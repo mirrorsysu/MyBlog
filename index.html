@@ -2,23 +2,5 @@
 layout: default
 title: 我的Blog
 ---
-<h2>{{ page.title }}</h2>
-<p>最新文章</p>
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
 
-<p>--category--</p>
-{% for category in site.categories%}
-	<h2>{{ category | first }}</h2>
-	{% for post in category.last %}
-		<li>
-	      <a href="{{ post.url }}">{{ post.title }}</a>
-	    </li>
-	{% endfor %}
-{% endfor %}
-<p>--category--</p>
+
