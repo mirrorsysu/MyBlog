@@ -12,14 +12,13 @@ title: 我的Blog
   {% endfor %}
 </ul>
 
-<p>category</p>
-{% for category in site.categories %}
-<p>{{ category | first }}</p>
-</span>{{ category | last | size }}</span>
-<ul>
-	{% for posts in category.last %}
-		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+<p>--category--</p>
+{% for category in site.categories%}
+	<h2>{{ category | first }}</h2>
+	{% for post in category.last %}
+		<li>
+	      <a href="{{ post.url }}">{{ post.title }}</a>
+	    </li>
 	{% endfor %}
-</ul>
 {% endfor %}
 <p>--category--</p>
